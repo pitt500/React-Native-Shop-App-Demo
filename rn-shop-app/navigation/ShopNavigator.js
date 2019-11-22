@@ -3,10 +3,12 @@ import { createAppContainer } from 'react-navigation';
 import { Platform } from 'react-native';
 
 import ProductsOverViewScreen from '../screens/shop/ProductsOverViewScreen';
+import ProductsDetailScreen from '../screens/shop/ProductDetailScreen';
 import Colors from '../constants/Colors';
 
 const ProductsNavigator = createStackNavigator({
-    ProductsOverView: ProductsOverViewScreen
+    ProductsOverView: ProductsOverViewScreen,
+    ProductDetail: ProductsDetailScreen
 }, {
     defaultNavigationOptions: {
         headerStyle: {
